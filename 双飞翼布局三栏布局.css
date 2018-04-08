@@ -1,0 +1,76 @@
+*{ 
+    margin: 0px;
+}
+
+.container{
+   background-color: #eee;
+   margin: 20px;
+   border: 1px solid #999;
+   min-height: 460px;
+   padding: 20px;
+}
+
+.wrap{
+    background-color: #eee;
+    width: 100%;
+    float: left;
+    /* position: relative; */
+    /* margin: 20px; */
+    /* min-height: 100px; */
+}
+
+.main{
+    box-sizing: border-box;
+    border: 1px solid #999;
+    margin-left: 220px;
+    margin-right: 140px;
+    max-height: 460px;
+    /* 防止高度过高脱离文档流 */
+    /* min-width: 220px; */
+    text-align: center;
+}
+
+.left{
+    box-sizing: border-box;
+    background-color: #eee;
+    border: 1px solid #999;
+    width: 200px;
+    min-height: 120px;
+    float: left;
+    margin-left: -100%;
+    padding: 20px;
+}
+
+.right{
+    box-sizing: border-box;
+    background-color: #eee;
+    border: 1px solid #999;
+    width: 120px;
+    min-height: 420px;
+    float: left;
+    margin-left: -120px;
+}
+
+.pic{
+    width: 80px;
+    height: 80px;
+    background-color: violet;
+    float: left;
+}
+
+.tname{
+    float: left;
+    position: relative;
+    left: 20px;
+}
+
+.pic1{
+    width: 80px;
+    height: 80px;
+    border: 1px solid #999;
+    margin: 20px;
+    background-color: yellow;
+}
+
+
+

@@ -1,0 +1,75 @@
+*{
+    margin: 0px;
+}
+
+
+.wrap{
+    width: auto;
+    min-height: 460px;
+    background-color: #eee;
+    border: #999 solid 1px;
+    position: relative;
+    margin: 20px;
+    padding: 20px;
+}
+
+
+.main{
+    /* margin-left: 240px;
+    margin-right: 160px; */
+    position: absolute;
+    background-color: #fff;
+    top: 20px;
+    left: 240px;
+    right: 160px;
+    border: 1px solid #999;
+    width: auto;
+    height: auto;
+    padding: 20px;
+}
+
+.team_dis{
+    width: 200px;
+    height: 120px;
+    position: absolute;
+    left: 20px;
+    top: 20px;
+    box-sizing: border-box;
+    background-color: #fff;
+    border: 1px solid #999;
+    /* display: inline-block; */
+    
+}
+
+.img{
+    width: 80px;
+    height: 80px;
+    margin: 20px;
+    background-image: url("../2017百度前端习题练习/mypicture/dog.png");
+    float: left;
+    border: 1px solid #999;
+}
+
+.team_dis p{
+    float: left;
+    position: relative;
+    top: 15px;
+}
+
+.team_logo{
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    width: 120px;
+    min-height: 420px;
+    float: left;
+    background-color: #fff;
+    border: 1px solid #999;
+}
+
+.png1{
+    width: 80px;
+    height: 80px;
+    background-color: rebeccapurple;
+    margin: 20px;
+}

@@ -1,0 +1,294 @@
+*{
+    margin: 0px 0px;
+    padding: 0px;
+}
+
+body{
+    background-color: rgba(226, 224, 224, 0.863);
+}
+
+.container{
+    height: 1200px;
+}
+
+div.heading{
+    width: 100%;
+    height: 60px;
+    background-color: rgb(67, 67, 68);
+    margin: 0px auto;
+}
+
+.heading_nav a:visited,.heading_nav a:link{
+    text-decoration: none;
+    color: whitesmoke;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-weight: bold;
+}
+
+.heading_nav a:hover,.heading_nav a:active{
+    color: brown;
+}
+
+.heading_nav ul{
+    float: right;
+    font-size: 14px;
+    margin-bottom: 20px;
+    margin-top: 20px;
+    margin-right: 20px;
+    list-style: none;
+}
+
+.heading_nav ul li{
+    float: left;
+    padding-left: 20px;
+    /* display: inline; */
+}
+
+.heading_nav ul li a span{
+    color: grey;
+}
+
+.heading_img{
+    float: left;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    margin-left: 20px
+}
+
+/* ————————————————————这是顶部分割线—————————————————— */
+article{
+    width: 90%;
+    margin: 0px auto;
+    margin-top: 40px;
+    background-color: rgba(226, 224, 224, 0.863);
+}
+
+section{
+    background-color: ghostwhite;
+    border-width: 0.5px;
+    border-style: groove;
+    border-color: rgba(214, 167, 48, 0.829);
+    border-right: 2px solid rgb(143, 142, 142);
+    border-bottom: 2px solid rgb(145, 144, 144);
+    padding: 20px;
+    margin-top: 40px;
+    margin-bottom: 0px;
+}
+
+section header h1{
+    margin-bottom: 8px;
+    color: black;
+    font-size: 22px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+section header h4{
+    margin-bottom: 8px;
+    color: grey;
+    font-size: 16px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+section header span{
+    color: grey;
+    font-size: 13px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+section p{
+    margin-top: 8px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 15px;
+    color: rgba(22, 22, 22, 0.801);
+    text-indent: 20px;
+}
+
+.body2 ul{
+    list-style-type: none;
+    margin-left: 15px;
+    margin-top: 8px;
+    font-size: 15px;
+}
+
+.pic_box {
+    margin-left: 40px;
+}
+
+.body_img .pics{
+    text-align: center;
+    border-style: groove;
+    border-width: 0.5px;
+    border-color: black;
+    margin-bottom: 20px;
+    max-width: 440px;
+    max-height: 410px;
+}
+
+.pics img{
+    margin: 15px auto;
+}
+
+.pics span{
+   font-size: 16px;
+   color: darkgoldenrod;
+}
+
+.body3 .arry ol{
+    margin-left: 50px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.body3 .table{
+    margin: 0px auto;;
+    width: 99%;
+    text-align: left;
+    border-collapse: collapse;
+    /*表格边框合并 */ 
+}
+.table,th,td{
+     border: 1px solid rgb(200, 200, 200);
+     padding-left: 0.5em;
+}
+
+.table .table_head{
+    background-color: rgba(27, 26, 26, 0.904);
+    color: whitesmoke;
+    font-size: 14px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.table_end{
+    font-size: 14px;
+    font-weight: bold;
+}
+
+/* —————————————————————————这是主体内容分割线———————————————— */
+
+/* ————————————————————侧边栏——————————- */
+aside{
+    background-color: ghostwhite;
+    border: 0.5px solid rgb(143, 142, 142);
+    border-color: rgba(214, 167, 48, 0.829);
+    border-style: groove;
+    border-right: 2px solid gray;
+    border-bottom: 2px solid gray;
+    margin-top: 40px;
+    margin-bottom: 20px;
+    padding: 20px;
+}
+
+aside h2{
+    font-size: 17px;
+}
+
+aside h2:before{
+    content: "";
+    border-left: 3px solid gray;
+    display: inline-block;
+    height: 40px;
+    /* vertical-align: middle; */
+    margin-right: 20px;
+} 
+/* 伪类实现文字旁的图形*/
+
+.form_left label{
+    font-size: 14px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+aside p span{
+    font-size: 13px;
+    color: gray;
+}
+
+aside label,option,input{
+    font-size: 14px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+form{
+    width: 100%;
+    margin: 5px auto;  
+}
+
+.tablerow{
+    margin: 0px 0px;
+    height: 30px;
+}
+
+.wrd{
+    margin: 10px auto;
+}
+
+.form_left{
+    width: 40%;
+    text-align: right;
+    display: inline-block;
+    margin: 15px auto;
+    vertical-align: middle;
+    margin-right: 10px;
+} 
+
+.form_right{
+    display: inline-block;
+    vertical-align: middle;
+}
+
+/* 处于同一父级标签下的元素使用垂直居中时会在一条基线上，不是同一父级则不在同一基线上 */
+
+.bts{
+    margin-top: 20px;
+    /* margin-bottom: 20px; */
+}
+
+.bts .bts_left{
+    width: 40%;
+    text-align: right;
+    display: inline-block;
+    margin: 15px auto;
+    margin-right: 10px;
+}
+
+.bts .bts_right{
+    display: inline-block;
+}
+
+.bts textarea{
+    vertical-align: top;
+}
+
+.submit {
+    margin-top: 20px;
+    box-sizing: border-box;
+    text-align: center;
+}
+
+#buttom{
+    width: 1100px;
+    height: auto;
+    padding: 5px;
+    font-size: 20px;
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: bold;
+    color: chocolate;
+    background-color: aqua;
+    border-radius: 12px;
+    border-style: none;
+    border-color: aqua;
+    border-collapse: collapse;
+}
+
+/* ——————————————————————————这是底部分割线——————--—————————————— */
+footer{
+    width: 100%;
+    height: auto;
+    font-size: 14px;
+    background-color: black;
+    text-align: center;
+    color: whitesmoke;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    /* line-height: 60px;  此方法是设置行高，也可行*/
+    padding-top: 20px;
+    padding-bottom: 20px;
+}

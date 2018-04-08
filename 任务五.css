@@ -1,0 +1,254 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+
+html,body{
+    height: 100%;
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.container{
+    background-color: rgb(232, 236, 236);
+    position: relative;
+}
+
+.heading{
+    width: 100%;
+    height: 80px;
+    position: relative;
+    background-color: rgba(0, 0, 0, 0.699);
+}
+
+.heading_img{
+    position: absolute;
+    top: 50%;
+    left: 20px;
+    transform: translateY(-50%);
+}
+
+
+.heading_nav ul{
+    list-style: none;
+    position: absolute;
+    top: 50%;
+    right: 20px;
+    transform: translate(0px,-50%);
+}
+
+.heading_nav ul li{
+    display: inline;
+    font-size: 14px;
+    padding-left: 10px;
+}
+
+.heading_nav a:visited, .heading_nav a:link{
+    text-decoration: none;
+    color: white; 
+}
+
+.heading_nav a:hover, .heading_nav a:active{
+    color: violet;
+}
+
+/* ————————————————————这是顶部分割线—————————————————— */
+.bodys{
+    padding: 20px;
+    height: 100%;
+}
+
+
+.contents {
+    box-sizing: border-box;
+    width: 100%;
+    position: relative;
+    float: left;
+    /* padding: 10px; */
+
+
+}
+
+article{
+    margin-right: 380px;
+}
+
+section{
+        padding: 15px;
+        margin-bottom: 20px;
+        background-color: ghostwhite;
+        border-width: 0.5px;
+        border-style: groove;
+        border-color: rgba(214, 167, 48, 0.829);
+        border-right: 2px solid rgb(143, 142, 142);
+        border-bottom: 2px solid rgb(145, 144, 144);
+}
+
+.body2 ul{
+    list-style: none;
+}
+
+.body_img h1{
+    font-size: 20px;
+}
+
+.pic_box{
+    display: flex;
+    flex-wrap: wrap; 
+    margin-left: 0px;
+}
+
+.pics{
+    width: 120px;
+    height: 125px;
+    border: 1px solid gray;
+    text-align: center;
+    margin-right: 20px;
+    margin-top: 20px;
+}
+
+.pics span{
+   font-size: 15px;
+   
+}
+
+.pics img{
+    width: 100px;
+    height: 80px;
+    margin: 10px;
+}
+
+
+.arry ol{
+    list-style: none;
+}
+
+.table{
+    width: 100%;
+}
+
+.table,td,th{
+    border: 1px solid rgb(200, 200, 200);
+    border-collapse: collapse;
+}
+
+.table .table_head{
+    background-color: black;
+    color: azure;
+}
+/* ————————————-----————————侧边栏—————------------—————- */
+.asides{
+    box-sizing: border-box;
+    width: 360px;
+    height: 500px;
+    position: relative;
+    float: left;
+    margin-left: -360px;
+    padding: 10px;
+
+    background-color: ghostwhite;
+    border: 0.5px solid rgb(143, 142, 142);
+    border-color: rgba(214, 167, 48, 0.829);
+    border-style: groove;
+    border-right: 2px solid gray;
+    border-bottom: 2px solid gray;
+}
+
+aside h2{
+    font-size: 17px;
+    border-left: 3px solid gray;
+    padding: 10px;
+}
+
+/* aside header::before{
+    content: "";
+    border-left: 3px solid gray;
+    display: inline-block;
+    margin-right: 10px;
+    height: 37px;
+} */
+
+form{
+    width: 100%;
+    padding: 10px;
+}
+
+.form_left{
+    display: inline-block;
+    width: 100px;
+    text-align: right;
+    font-size: 14px;
+    vertical-align: middle;
+}
+
+.form_right{
+    display: inline-block;
+    margin-left: 10px;
+    vertical-align: middle;
+}
+
+.bts_left{
+    display: inline-block;
+    width: 100px;
+    text-align: right;
+    font-size: 14px;
+    vertical-align: top;
+}
+
+.bts_right{
+    display: inline-block;
+    margin-left: 10px;
+    vertical-align: middle;
+}
+
+.tablerow{
+    font-size: 13px;
+    margin-bottom: 10px;
+}
+
+.wrd{
+    font-size: 13px;
+    margin-bottom: 20px;
+}
+
+textarea{
+    box-sizing: border-box;
+    width: 200px;
+    height: 100px;
+}
+
+.submit{
+    margin-top: 10px;
+    
+}
+
+.submit input{
+    width: 320px;
+    height: 40px;
+    background-color: #3355d0;
+    border-radius: 10px;
+    border: none;
+    font-size: 18px;
+    color: azure;
+}
+
+
+/* ————————————-----————————清除浮动—————------------—————- */
+.clear{
+    clear: both;
+}
+
+/* ————————————-----————————底部—————------------—————- */
+footer{
+    width: 100%;
+    height: 70px;
+    background-color: rgba(0, 0, 0, 0.699);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+footer p{
+    color: aliceblue;
+}
