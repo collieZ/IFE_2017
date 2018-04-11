@@ -1,0 +1,125 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+
+.container{
+    width: 980px;
+    height: 1386px;
+    background-color: #fff;
+    padding-left: 44px;
+    padding-right: 44px;
+    padding-bottom: 44px;
+    border: 0.5px solid black;
+    margin: auto;
+    position: relative;
+}
+
+/* ---------------顶部--------------- */
+.header{
+    width: 100%;
+    height: 63px;
+    position: relative;
+}
+
+.heading_left{
+    width: 110px;
+    height: 60px;
+    background-color: #d45d5c;
+    position: relative;
+    float: left;
+}
+
+.heading_right {
+    width: 42px;
+    height: 10px;
+    position: relative;
+    float: right;
+    margin-top: 46px;
+}
+
+.heading_bottom{
+    width: 100%;
+    height: 3px;
+    background-color: #938e8c;
+    clear: both;
+}
+
+.heading_left p{
+    font-size: 12px;
+    color: #fff;
+    line-height: 14px;
+    margin-top: 46px;
+    margin-left: 7px;
+}
+
+.heading_right p{
+    font-size: 12px;
+    color: #d76867;
+    line-height: 14px;
+}
+
+/* ---------------主体内容部分--------------- */
+
+/* -----------------左上大图部分-------------- */
+.bodys{
+    box-sizing: border-box;
+    width: 100%;
+    height: auto;
+    margin-top: 35px;
+    margin-bottom: 40px;
+    position: relative;
+}
+
+.left_tpic {
+    width: 641px;
+    height: 301px;
+    position: absolute;
+    left: 0px;
+    top: 0px;
+}
+
+.left_tpic .m_pic {
+    position: absolute;
+    z-index: 1;
+}
+
+.left_tpic .l_pic {
+    position: absolute;
+    left: 0px;
+    opacity: 0.502;
+    z-index: 1;
+}
+
+.left_tpic .r_pic {
+    position: absolute;
+    right: 0px;
+    opacity: 0.502;
+    z-index: 2;
+}
+
+/* -----------------右上文字部分-------------- */
+.right_tfont{
+    position: absolute;
+    width: 210px;
+    height: 300px;
+    right: 0px;
+    top: 0px;
+}
+
+.pink_line{
+    width: 210;
+    height: 2px;
+    background-color: #cc8091;
+}
+
+.en_intrduce{
+    font-size: 24px;
+    font-family: MicrosoftYaHei;
+    line-height: 30px;
+}
+
+.en_intrduce p{
+    text-decoration: underline;
+    font-variant: small-caps;
+}

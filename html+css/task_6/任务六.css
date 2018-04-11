@@ -1,0 +1,245 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+
+.container{
+    width: 980px;
+    height: 1386px;
+    background-color: #fff;
+    padding-left: 44px;
+    padding-right: 44px;
+    padding-bottom: 44px;
+    border: 0.5px solid black;
+    margin: auto;
+    position: relative;
+}
+
+/* ---------------顶部--------------- */
+.header{
+    width: 100%;
+    height: 63px;
+    position: relative;
+    margin-bottom: 35px;
+}
+
+.heading_left{
+    width: 110px;
+    height: 60px;
+    background-color: #d45d5c;
+    position: relative;
+    float: left;
+}
+
+.heading_right {
+    width: 42px;
+    height: 10px;
+    position: relative;
+    float: right;
+    margin-top: 46px;
+}
+
+.heading_bottom{
+    width: 100%;
+    height: 3px;
+    background-color: #938e8c;
+    clear: both;
+}
+
+.heading_left p{
+    font-size: 12px;
+    color: #fff;
+    line-height: 14px;
+    margin-top: 46px;
+    margin-left: 7px;
+}
+
+.heading_right p{
+    font-size: 12px;
+    color: #d76867;
+    line-height: 14px;
+}
+
+/* ---------------主体内容部分--------------- */
+
+/* -----------------左上大图部分-------------- */
+.bodys{
+    box-sizing: border-box;
+    width: 100%;
+    height: auto;
+    /* margin-top: 35px; */
+    margin-bottom: 40px;
+    position: relative;
+}
+
+.tops{
+    position: relative;
+    height: 301px;
+    margin-bottom: 41px;
+}
+
+.left_tpic {
+    width: 641px;
+    height: 301px;
+    position: absolute;
+    left: 0px;
+    top: 0px;
+}
+
+.left_tpic .m_pic {
+    position: absolute;
+    z-index: 1;
+}
+
+.left_tpic .l_pic {
+    position: absolute;
+    left: 0px;
+    opacity: 0.502;
+    z-index: 1;
+}
+
+.left_tpic .r_pic {
+    position: absolute;
+    right: 0px;
+    opacity: 0.502;
+    z-index: 2;
+}
+
+/* -----------------右上文字部分-------------- */
+.right_tfont{
+    position: absolute;
+    width: 210px;
+    height: 301px;
+    right: 0px;
+    top: 0px;
+}
+
+.pink_line{
+    width: 210;
+    height: 2px;
+    background-color: #cc8091;
+}
+
+.en_intrduce{
+    font-size: 24px;
+    font-family: "MicrosoftYaHei";
+    line-height: 30px;
+}
+
+.en_intrduce p{
+    text-decoration: underline;
+    font-variant: small-caps;
+}
+
+.en_intrduce .clb407{
+    margin-top: 50px;
+}
+
+.en_intrduce .clb407 span{
+    font-size: 116px;
+    font-family: "MicrosoftYaHei";
+    line-height: 116px;
+    color: rgb(117, 184, 107);
+    transform: matrix(1.99264334847157, 0, 0, 1.99080793420416, 0, 0);
+}
+
+.en_intrduce .upup{
+    margin-top: 20px;
+    transform: rotateZ(10deg);
+}
+
+.en_intrduce .upup span{
+    font-size: 55px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    line-height: 55px;
+    color: #cc8091;
+}
+
+/* -----------------中上报文部分-------------- */
+.mediums{
+    width: 642px;
+    position: relative;
+    margin-bottom: 80px;
+}
+
+.news{
+    height: 202px;
+}
+
+.news_left{
+    width: 230px;
+    height: 168px;
+    position: relative;
+    float: left;
+    overflow: auto;
+    /* border: 1px solid rebeccapurple; */
+}
+
+.news_left h2{
+    font-size: 16px;
+    font-family: "MicrosoftYaHei";
+    line-height: auto;
+    text-decoration: underline;
+    color: #cce0d3;
+    margin-bottom: 10px;
+}
+
+.news_mediu{
+    width: 205px;
+    height: 168px;
+    position: relative;
+    float: left;
+    margin-left: 30px;
+    overflow: auto;
+    /* border: 1px solid rebeccapurple; */
+}
+
+.news_mediu h2{
+    font-size: 16px;
+    font-family: "MicrosoftYaHei";
+    line-height: auto;
+    text-decoration: underline;
+    color: #d2994f;
+    margin-bottom: 10px;
+}
+
+.news_right{
+    width: 145px;
+    height: 168px;
+    position: relative;
+    float: left;
+    margin-left: 30px;
+    overflow: auto;
+}
+
+.news_right h2{
+    font-size: 16px;
+    font-family: "MicrosoftYaHei";
+    line-height: auto;
+    text-decoration: underline;
+    color: #cc8091;
+    margin-bottom: 10px;
+}
+
+/* -----------------主体下部分-------------- */
+.bottoms{
+    width: 100%;
+    height: 606px;
+    position: relative;
+    margin-bottom: 40px;
+    border: 1px solid rebeccapurple;
+}
+
+
+/* -----------------底部-------------- */
+.footer{
+    width: 100%;
+    height: 60px;
+    position: relative;
+}
+
+.footer .foot_line{
+    width: 100%;
+    height: 1px;
+    background-color: #938e8c;
+}
