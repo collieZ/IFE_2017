@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>IFE JavaScript Task 01</title>
+</head>
+
+<body>
+
+    <h3>污染城市列表</h3>
+    <ul id="aqi-list">
+        <!--   
+      <li>第一名：福州（样例），10</li>
+      <li>第二名：福州（样例），10</li> -->
+    </ul>
+
+    <script type="text/javascript">
+
+        var aqiData = [
+            ["北京", 90],
+            ["上海", 50],
+            ["福州", 10],
+            ["广州", 50],
+            ["成都", 90],
+            ["西安", 100]
+        ];
+
+        (function () {
+
+            /*
+            在注释下方编写代码
+            遍历读取aqiData中各个城市的数据
+            将空气质量指数大于60的城市显示到aqi-list的列表中
+            */
+            
+            var citys = new Array;
+            var dirtdeep = new Array;
+            var badcity = new Array;
+            var list = document.getElementById("aqi-list");
+            // 从二维数组中将城市和污染度分别取出
+            for(var tem in aqiData){
+                var obj = aqiData[tem];
+                for(var city in obj){
+                    if (city % 2 == 0) {
+             
+                        citys.push(obj[city]);
+                    }else{
+                        dirtdeep.push(obj[city]);
+                    }
+                }
+            }
+            // 取出污染度大于60的城市编号
+            for(var i = 0;i < dirtdeep.length;i ++){
+                var dirtrank = dirtdeep[i];
+                if (dirtrank >= 60) {
+                    badcity.push(i);
+                }
+            }
+            
+            // 将污染度超标的城市通过列表显示
+            for(var i = 0;i < badcity.length;i ++){
+                var nodes = document.createElement("li");
+                nodes.innerHTML = "第"+(i + 1)+"名:"+citys[badcity[i]]+", "+dirtdeep[badcity[i]];
+                list.appendChild(nodes);
+            }
+        })();
+
+    </script>
+</body>
+
+</html>
