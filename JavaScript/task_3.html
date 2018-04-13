@@ -104,9 +104,11 @@
         }
 
         function btnHandle() {
+            var btn = document.getElementById("sort-btn");
             var aqiData = getData();
             aqiData = sortAqiData(aqiData);
             render(aqiData);
+            btn.disabled = true;
         }
 
         function init() {
