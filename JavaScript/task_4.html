@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <style>
+        form{
+            text-align: center;
+        }
+
+        #rightin{
+            margin-left: -3px;
+        }
+
+        #rightout{
+            margin-left: -3px;
+        }
+
+        .intext{
+            display: inline;
+        }
+
+        .outtext{
+            display: inline;
+            margin-left: 20px;
+        }
+
+        .test{
+            background-color: red;
+            color: white;
+            padding: 5px;
+            margin-left: 5px;
+            display:inline-block;
+            *display:inline;
+            *zoom:1;        /*兼容如IE6的其他浏览器*/
+        }
+
+    </style>
+    <title>task_4 基础练习</title>
+</head>
+<body>
+    <form>
+        <input type="text" name="input" id="input">
+        <div class="intext">
+            <button type="button" id="leftin">左侧入</button>
+            <button type="button" id="rightin">右侧入</button>
+        </div>
+
+        <div class="outtext">
+            <button type="button" id="leftout">左侧出</button>
+            <button type="button" id="rightout">右侧出</button>
+        </div>
+        <div id="display">
+        </div>
+    </form>
+    <!-- js 后续还可添加对输入校验头部和尾部是空格的情况 -->
+    <script>
+        // 变量初始化
+        var leftInBtn = document.getElementById("leftin");
+        var rightInBtn = document.getElementById("rightin");
+        var leftOutBtn = document.getElementById("leftout");
+        var rightOutBnt = document.getElementById("rightout");
+        var textInput = document.getElementById("input"); 
+        var display = document.getElementById("display");
+        
+
+
+        function removeBlock(container) {                       // 点击移除元素
+            container.addEventListener("click", function () {       
+                display.removeChild(container);
+                alert(container.innerText);
+            });
+        }
+
+        function creatLeftBlock(num) {     // 创建左边元素块
+            if (checkInput(num) === 1) {
+                var container = document.createElement("div");
+                container.className = "test"
+                container.innerText = num;
+                if (display.children[0] == "undefined") {
+                    display.appendChild(container);
+                } else {
+                    display.insertBefore(container, display.children[0]);
+                }
+                removeBlock(container);
+            } else{
+              return ;  
+            }           
+        }
+
+        function creatRightBlock(num) {                     // 创建右边元素块
+            if (checkInput(num) === 1) {
+                var container = document.createElement("div");
+                container.className = "test";
+                container.innerText = num;
+                display.appendChild(container);
+                removeBlock(container);
+            } else{
+                return ;
+            }
+        }
+
+        function checkInput(inputs) {       // 输入校验
+
+            if (inputs == "") {
+                return alert("请输入数字");
+            }
+            if (isNaN(inputs)) {
+                return alert("请输入正确格式");
+            } else{
+                return 1;
+            }
+        }
+        
+        function delLeftBlock() {       // 移除最左元素
+            var firstBlock = display.firstElementChild;
+            if (firstBlock == null) {
+                return alert("请输入元素后再左移除");
+            } else{
+                alert(display.firstElementChild.innerHTML);
+                firstBlock.remove();
+            }
+        }
+
+        function delRightBlock() {      // 移除最右元素
+            var lastBlock = display.lastElementChild;
+            if (lastBlock == null) {
+                return alert("请输入元素后再右移除");
+            } else{
+                alert(display.lastElementChild.innerHTML);
+                lastBlock.remove();
+            }
+        }
+        
+        // delRightBlock();
+        
+        function init() {
+            leftInBtn.addEventListener("click", function () {       // 左队列添加按键事件
+                var textValue = textInput.value;
+                creatLeftBlock(textValue);
+            });
+
+            rightInBtn.addEventListener("click", function () {      // 右队列添加按键事件
+                var textValue = textInput.value;
+                creatRightBlock(textValue);
+            });
+
+            leftOutBtn.addEventListener("click", function () {      // 左队列移除按键事件
+                delLeftBlock();
+            });
+
+            rightOutBnt.addEventListener("click", function () {     // 右队列移除按键事件
+                delRightBlock();
+            });
+        }
+
+        init();     // 全部初始化
+
+    </script>
+</body>
+</html>
