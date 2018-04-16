@@ -102,12 +102,15 @@
         }
 
         function checkInput(inputs) {       // 输入校验
-
-            if (inputs == "") {
-                return alert("请输入数字");
+            var inputArr = inputs.split("");
+            if (inputArr[0] == " " || inputArr[inputArr.length-1] == " ") {
+                return alert("请确认输入格式");
             }
-            if (isNaN(inputs)) {
-                return alert("请输入正确格式");
+            else if (inputs == "") {
+                return alert("请输入~");
+            }
+            else if (isNaN(inputs)) {
+                return alert("请输入纯数字");
             } else{
                 return 1;
             }
