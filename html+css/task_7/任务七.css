@@ -1,0 +1,68 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+.grid-container {
+    width: 100%;
+    max-width: 768px;
+    border: 1px solid #999;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    margin: auto;
+    height: auto;
+    padding: 20px;
+    align-content: center;
+}
+
+/*--our cleafix hack -- */
+.row::before,
+.row::after{
+    content: "";
+    display: table;
+    clear: both;
+}
+
+[class*='col-']{
+    float: left;
+    min-height: 1px;
+    width: 8.33%;
+    padding: 10px;
+    height: auto;
+}
+
+[class*='col-'] > p{
+    border: 1px solid #999;
+    background-color: #eee;
+    height: 50px;
+    margin: 0px;
+    padding: 0px;
+    color: red;
+}
+
+.col-1{ width: 8.33%; }
+.col-2{ width: 16.66%; }
+.col-3{ width: 25%; }
+.col-4{ width: 33.33%; }
+.col-5{ width: 41.66%; }
+.col-6{ width: 50%; }
+
+@media all and (max-width:768px) {
+    .col-1{ width: 16.66%; }
+    .col-4{ width: 50%; }
+    .col-4:last-child{ width: 100%; }
+    .col-2{ width: 66.66%; }
+    /*  .col-2:last-child  // wrong
+        .col-2:last-of-type  // not work
+        理解为是col-2元素,并且是父元素中最后一个元素,
+        所以last-child,last-of-type不起作用.
+    */
+    /* .col-2:last-child{ width: 25%; } */
+    /* .col-2:last-of-type{ width: 25%; } */
+    .col-2~.col-2{ width: 25%; }    /* 除第一个元素之后所有col-2选择 */
+    .col-6:last-of-type{ width: 25%; }
+
+}
